@@ -24,6 +24,16 @@ class cliente:
         print(f'Email: {self.email}')
         print(f'Nombre de usuario: {self.nomb_usu}')
         print(f'Contraseña: {self.clav_usu}')
+
+    def iniciar_sesion(self,n_u,v_u):
+        self.n_u = n_u
+        self.v_u = v_u
+
+        if (self.nomb_usu == self.n_u) & (self.clav_usu == self.v_u):
+            print(f'Inicio exitoso, bienvenido señor {self.nombre}')
+        else:
+            print(f'Usuario o contraseña incorrecta')
+
 #pido al usuario dichos datos
 nom = input("Ingrese el nombre: ")
 ape = input("Ingrese el apellido: ")
@@ -36,7 +46,7 @@ clav_u = input("Ingrese el contraseña: ")
 #envio por parametros a la clase padre
 mi_hotel = cliente(nom,ape,edad,ciuda,cel,email,nomb_u,clav_u)
 #llamo  a la funcion atributos para visualizar los datos ingresados
-mi_hotel.atributos()
+mi_hotel.iniciar_sesion('Srojas',123)
 
 
         
