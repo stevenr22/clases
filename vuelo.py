@@ -29,8 +29,8 @@ class cliente:
         self.n_u = n_u
         self.v_u = v_u
 
-        if (self.nomb_usu == self.n_u) & (self.clav_usu == self.v_u):
-            print(f'Inicio exitoso, bienvenido señor {self.nombre}')
+        if (self.nomb_usu == self.n_u) and (self.clav_usu == self.v_u):
+            print(f'Inicio exitoso, bienvenido señor {self.nombre}+{self.apellido}')
         else:
             print(f'Usuario o contraseña incorrecta')
 
@@ -46,7 +46,7 @@ clav_u = input("Ingrese el contraseña: ")
 #envio por parametros a la clase padre
 mi_cli = cliente(nom,ape,edad,ciuda,cel,email,nomb_u,clav_u)
 #llamo  a la funcion atributos para visualizar los datos ingresados
-mi_cli.iniciar_sesion('Srojas',123)
+mi_cli.iniciar_sesion('Srojas','123')
 
 
         
