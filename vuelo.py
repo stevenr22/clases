@@ -44,9 +44,9 @@ email = input("Ingrese el email: ")
 nomb_u = input("Ingrese el nombre de usuario: ")
 clav_u = input("Ingrese el contraseña: ")
 #envio por parametros a la clase padre
-mi_hotel = cliente(nom,ape,edad,ciuda,cel,email,nomb_u,clav_u)
+mi_cli = cliente(nom,ape,edad,ciuda,cel,email,nomb_u,clav_u)
 #llamo  a la funcion atributos para visualizar los datos ingresados
-mi_hotel.iniciar_sesion('Srojas',123)
+mi_cli.iniciar_sesion('Srojas',123)
 
 
         
